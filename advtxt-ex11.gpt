@@ -9,25 +9,32 @@ início
 
     enquanto i <> 1 e i <> 2 faça
         imprima("Digite sua escolha (1 ou 2): ");
-        leia := i;
+        i := leia();
         se i <> 1 e i <> 2 então
             imprima("Digite um valor aceitável: 1 ou 2.\n");
+
         fim-se
+
     fim-enquanto
 
     se i = 1 então
         imprima("Morbius eh um mini RPG de texto, cujas acoes sao decididas por meio dos numeros que voce digitar\n");
         imprima("Prepare-se para esta aventura!\n\n\n");
-        imprima("Você e seu grupo fazem parte de um mundo onde a ciência e o sobrenatural se misturam de maneira perigosa.\n");
-        imprima("Dr. Michael Morbius, um brilhante cientista, foi transformado em uma criatura vampírica ao tentar curar sua rara doença sanguínea.\n");
-        imprima("Agora, a cidade de Nova York está abalada por ataques noturnos, enquanto boatos sobre um vampiro vivo se espalham pelas ruas.\n");
-        imprima("Vocês estão procurando abrigo e encontram um prédio aberto, ele tem o nome de Laboratório Horizon, todos se entreolham e decidem entrar.\n");
-        imprima("Dentro do laboratório vocês encontram diversas gavetas e seus amigos começam a procurar utensílios nelas.\n");
-        imprima("Você abre uma gaveta e vê os seguintes itens:\n 1. Erlenmeyer com sangue dentro\n 2. Uma estaca\n\n");
 
+        imprima("Você e seu grupo fazem parte de um mundo onde a ciência e o sobrenatural se misturam de maneira perigosa.\n");
+
+        imprima("Dr. Michael Morbius, um brilhante cientista, foi transformado em uma criatura vampírica ao tentar curar sua rara doença sanguínea.\n");
+
+        imprima("Agora, a cidade de Nova York está abalada por ataques noturnos, enquanto boatos sobre um vampiro vivo se espalham pelas ruas.\n");
+
+        imprima("Vocês estão procurando abrigo e encontram um prédio aberto, ele tem o nome de Laboratório Horizon, todos se entreolham e decidem entrar.\n");
+
+        imprima("Dentro do laboratório vocês encontram diversas gavetas e seus amigos começam a procurar utensílios nelas.\n");
+
+        imprima("Você abre uma gaveta e vê os seguintes itens:\n 1. Erlenmeyer com sangue dentro\n 2. Uma estaca\n\n");
         enquanto j <> 1 e j <> 2 faça
             imprima("Digite sua escolha (1 ou 2): ");
-            leia :-= j;
+            j := leia();
             se j <> 1 e j <> 2 então
                 imprima("Digite um valor aceitável: 1 ou 2.\n");
             fim-se
@@ -42,7 +49,7 @@ início
 
             enquanto k <> 1 e k <> 2 faça
                 imprima("Digite sua escolha (1 ou 2): ");
-                leia := k;
+                k := leia();
                 se k <> 1 e k <> 2 então
                     imprima("Digite um valor aceitável: 1 ou 2.\n");
                 fim-se
@@ -64,9 +71,8 @@ início
             imprima("Você morreu e seu grupo também!\n\n GAME OVER\n\n");
         fim-se
 
-    senão
+        senão
         imprima("Até uma próxima!\n");
-    fim-se
-
+        fim-se
 fim
 
